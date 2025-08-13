@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #d9f7d9 0%, #a83232 100%);
+      color: #3a1b1b;
+    }
+
+    h1 {
+      margin: 20px 0;
+      color: #5a1a1a; /* maroon */
+      text-shadow: 1px 1px 3px #b2d8b2;
+    }
+
+    .dashboard-box {
+      width: fit-content;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .dashboard-box a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .dashboard-box div {
+      background: #7a2a2a; /* darker maroon */
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #f0e6e6;
+    }
+
+    .dashboard-box div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      background: #a83232; /* brighter maroon on hover */
+    }
+
+    .dashboard-box img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #d9f7d9;
+      background-color: #f9f9f9;
+    }
+
+    .dashboard-box p {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #f0e6e6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Dashboard</h1>
+
+  <div class="dashboard-box">
+    <a href="view_course.html">
+      <div>
+        <img src="course.jpg" alt="Course" />
+        <p>Course</p>
+      </div>
+    </a>
+    <a href="view_report.html">
+      <div>
+        <img src="report.jpg" alt="Report" />
+        <p>Report</p>
+      </div>
+    </a>
+    <a href="view_result.html">
+      <div>
+        <img src="results.jpg" alt="Results" />
+        <p>Results</p>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

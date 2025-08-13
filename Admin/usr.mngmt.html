@@ -3,9 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5e3d9a;
+            color: #ffd700;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #4a2e7f;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #5e3d9a;
+            color: #ffd700;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        button {
+            background-color: #5e3d9a;
+            color: #ffd700;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #4a2e7f;
+        }
+        form {
+            background-color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            padding: 8px;
+            width: 100%;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #5e3d9a;
+            color: #ffd700;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #4a2e7f;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>Admin - User Management</header>
+    <nav>
+        <a href="admin_index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="crse.mngmnt.html">Course Management</a>
+        <a href="usr.mngmnt.html">User Management</a>
+        <a href="report.html">Reports</a>
+    </nav>
+
+    <div class="container">
+        <h2>Registered Users</h2>
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Madhusudhan</td>
+                <td>Faculty</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Pallavi</td>
+                <td>Student</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Add New User</h2>
+        <form>
+            <label for="userid">User ID:</label>
+            <input type="text" id="userid" name="userid">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="faculty">Faculty</option>
+                <option value="student">Student</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <input type="submit" value="Add User">
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>View Courses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #d9f7d9 0%, #a83232 100%);
+      color: #3a1b1b; /* dark maroon-ish text */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #5a1a1a; /* maroon */
+      text-shadow: 1px 1px 3px #b2d8b2;
+    }
+
+    table {
+      width: 90%;
+      max-width: 900px;
+      border-collapse: collapse;
+      background-color: #ffffffcc; /* white with slight transparency */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #a83232;
+      color: #3a1b1b;
+    }
+
+    th {
+      background-color: #a83232; /* maroon header */
+      color: #fff;
+      font-weight: bold;
+    }
+
+    tr:hover {
+      background-color: #d9f7d9;
+      cursor: default;
+    }
+
+    @media (max-width: 600px) {
+      table, th, td {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Courses Offered</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Course ID</th>
+        <th>Course Name</th>
+        <th>Instructor</th>
+        <th>Credits</th>
+        <th>Schedule</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>CSE101</td>
+        <td>Introduction to Computer Science</td>
+        <td>Dr. Rajesh Kumar</td>
+        <td>3</td>
+        <td>Mon, Wed 10:00-11:30</td>
+      </tr>
+      <tr>
+        <td>CSE205</td>
+        <td>Data Structures and Algorithms</td>
+        <td>Prof. Anjali Sharma</td>
+        <td>4</td>
+        <td>Tue, Thu 9:00-10:30</td>
+      </tr>
+      <tr>
+        <td>CSE303</td>
+        <td>Operating Systems</td>
+        <td>Dr. Suresh Gupta</td>
+        <td>4</td>
+        <td>Mon, Wed 2:00-3:30</td>
+      </tr>
+      <tr>
+        <td>CSE404</td>
+        <td>Artificial Intelligence</td>
+        <td>Prof. Meera Nair</td>
+        <td>3</td>
+        <td>Fri 11:00-1:00</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

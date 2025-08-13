@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management - Student</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f6ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5e3d9a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #4a2e7f;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        table th {
+            background-color: #4a2e7f;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f3eaff;
+        }
+        .add-btn {
+            display: inline-block;
+            background-color: #ffd700;
+            color: #4a2e7f;
+            padding: 8px 15px;
+            margin: 15px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .add-btn:hover {
+            background-color: #e6c200;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Course Management - Student</h1>
+</header>
+
+<nav>
+    <a href="admin_index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="result.html">Results</a>
+    <a href="usr.mngmnt.html">User Management</a>
+</nav>
+
+<main>
+    <a href="#" class="add-btn">+ Add Student Course</a>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Course Enrolled</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>31132</td>
+            <td>Chiranjini</td>
+            <td>Machine Learning</td>
+            <td>
+                <a href="#">Edit</a> | <a href="#">Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>31133</td>
+            <td>Bindu</td>
+            <td>Database Systems</td>
+            <td>
+                <a href="#">Edit</a> | <a href="#">Delete</a>
+            </td>
+        </tr>
+    </table>
+</main>
+
+</body>
+</html>

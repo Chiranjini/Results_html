@@ -1,1 +1,100 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Marks</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table th, table td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    table th {
+      background-color: #901E3E;
+      color: white;
+      font-weight: bold;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+
+    table tr:hover {
+      background-color: #f1f1f1;
+      transform: scale(1.01);
+      transition: 0.2s ease-in-out;
+    }
+
+    input[type="number"] {
+      padding: 5px;
+      width: 80px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      background-color: #F87A53;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #d95e3a;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="Faculty-heading">Post Marks</h1>
+
+  <div class="container">
+    <h3 style="color:#901E3E; text-align:center;">Enter Marks for DBMS</h3>
+    <form action="#" method="post">
+      <table border="1">
+        <tr>
+          <th>Student Name</th>
+          <th>Roll No</th>
+          <th>Marks</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Bindu</td>
+          <td>2400031133</td>
+          <td><input type="number" name="marks_bindu" min="0" max="100" required></td>
+          <td><button class="btn" type="submit">Save</button></td>
+        </tr>
+        <tr>
+          <td>Chiranjini</td>
+          <td>2400031132</td>
+          <td><input type="number" name="marks_chiranjini" min="0" max="100" required></td>
+          <td><button class="btn" type="submit">Save</button></td>
+        </tr>
+        <tr>
+          <td>Radha</td>
+          <td>2400031128</td>
+          <td><input type="number" name="marks_rahul" min="0" max="100" required></td>
+          <td><button class="btn" type="submit">Save</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

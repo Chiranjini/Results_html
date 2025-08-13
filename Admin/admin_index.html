@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #41626e, #ac2d94); /* Violet-Blue blend */
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 25px 0;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .dashboard-box {
+      width: fit-content;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .dashboard-box a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .dashboard-box div {
+      background: linear-gradient(145deg, #8e44ad, #9a2e54);
+      border-radius: 18px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+      padding: 15px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dashboard-box div:hover {
+      transform: translateY(-7px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+      background: linear-gradient(145deg, #9b59b6, #7d3c98);
+    }
+
+    .dashboard-box img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .dashboard-box .wide {
+      grid-column: span 3;
+    }
+
+    .dashboard-box .wide img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <div class="dashboard-box">
+    <a href="student_management.html"><div><img src="admin_media/stu.mngmt.jpg" alt="Student Management"></div></a>
+    <a href="faculty_management.html"><div><img src="admin_media/faculty.mngmt.jpg" alt="Faculty Management"></div></a>
+    <a href="course.html"><div><img src="admin_media/course.jpg" alt="Course"></div></a>
+
+    <a href="profile.html"><div><img src="admin_media/profile.jpg" alt="Profile"></div></a>
+    <a href="course_management.html"><div><img src="admin_media/crse.mngmt.jpg" alt="Course Management"></div></a>
+    <a href="report.html"><div><img src="admin_media/report.jpg" alt="Report"></div></a>
+
+    <a href="results.html"><div class="wide"><img src="admin_media/results.jpg" alt="Results"></div></a>
+  </div>
+</body>
+</html>

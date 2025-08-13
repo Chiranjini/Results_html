@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Courses</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table th, table td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    table th {
+      background-color: #901E3E;
+      color: white;
+      font-weight: bold;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+
+    table tr:hover {
+      background-color: #f1f1f1;
+      transform: scale(1.01);
+      transition: 0.2s ease-in-out;
+    }
+
+    .btn {
+      background-color: #F87A53;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #d95e3a;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="Faculty-heading">Faculty Courses</h1>
+
+  <div class="container">
+    <h3 style="color:#901E3E; text-align:center;">Your Assigned Courses</h3>
+    <table border="1">
+      <tr>
+        <th>Course Name</th>
+        <th>Course Code</th>
+        <th>Semester</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>Database Management Systems</td>
+        <td>CSE301</td>
+        <td>5th</td>
+        <td><button class="btn">View Details</button></td>
+      </tr>
+      <tr>
+        <td>Object Oriented Programming</td>
+        <td>CSE202</td>
+        <td>4th</td>
+        <td><button class="btn">View Details</button></td>
+      </tr>
+      <tr>
+        <td>Front End Framework</td>
+        <td>CSE401</td>
+        <td>6th</td>
+        <td><button class="btn">View Details</button></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
+

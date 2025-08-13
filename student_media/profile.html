@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #d9f7d9 0%, #a83232 100%);
+      text-align: center;
+      margin: 0;
+      padding: 40px 0;
+      color: #3a1b1b;
+    }
+
+    .profile-container {
+      width: fit-content;
+      margin: 0 auto;
+      padding: 30px;
+      border: 3px solid #5a1a1a; /* maroon border */
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      background-color: #ffffffcc; /* white with transparency */
+      text-align: center;
+      color: #3a1b1b;
+    }
+
+    .profile-header {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #5a1a1a; /* maroon text */
+      text-shadow: 1px 1px 3px #b2d8b2;
+    }
+
+    .profile-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .profile-info img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 1px solid #5a1a1a;
+    }
+
+    .profile-text {
+      text-align: left;
+      color: #3a1b1b;
+    }
+
+    .profile-text p {
+      margin: 4px 0;
+    }
+
+    ul.menu-list {
+      list-style-type: disc;
+      text-align: left;
+      margin: 0 auto 30px auto;
+      width: fit-content;
+      color: #5a1a1a;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    ul.menu-list li {
+      margin-bottom: 8px;
+    }
+
+    table.student-details {
+      border-collapse: collapse;
+      margin: 0 auto;
+      text-align: left;
+      width: 350px;
+      color: #3a1b1b;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+    }
+
+    table.student-details th {
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+      background-color: #a83232;
+      color: white;
+    }
+
+    table.student-details td,
+    table.student-details th {
+      border: 1px solid #a83232;
+      padding: 10px;
+    }
+
+    table.student-details td:first-child {
+      font-weight: bold;
+      background-color: #e6b8b8;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="profile-header">Student Profile</h1>
+
+  <div class="profile-container">
+    <!-- Profile Section -->
+    <div class="profile-info">
+      <img src="profile.jpg" alt="Profile Icon" />
+      <div class="profile-text">
+        <p>Hello! check your profile.</p>
+        <p>Hello! check your profile.</p>
+        <p>Hello! check your profile.</p>
+      </div>
+    </div>
+
+    <!-- Menu List -->
+    <ul class="menu-list">
+      <li>My Profile</li>
+      <li>Enrolled Courses</li>
+      <li>View Results</li>
+    </ul>
+
+    <!-- Student Table -->
+    <table class="student-details">
+      <tr>
+        <th colspan="2">Student Details</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Chiranjini</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>chiru@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Roll No</td>
+        <td>31132</td>
+      </tr>
+      <tr>
+        <td>Batch</td>
+        <td>2024</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

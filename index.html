@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Result Analysis Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #d9f7d9 0%, #a83232 100%);
+      color: #3a1b1b;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    h1 {
+      color: #5a1a1a;
+      text-shadow: 1px 1px 3px #b2d8b2;
+      margin-bottom: 50px;
+      font-size: 2.8rem;
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 30px;
+      margin: 0 auto;
+    }
+
+    td {
+      background: #7a2a2a; /* maroon */
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      padding: 25px 30px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+      cursor: pointer;
+      color: #f0e6e6;
+    }
+
+    td:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 12px 28px rgba(221, 93, 93, 0.5);
+      background-color: #a83232; /* brighter maroon */
+    }
+
+    td a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(221, 93, 93, 0.7);
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: 700;
+      user-select: none;
+    }
+
+    @media (max-width: 700px) {
+      table {
+        border-spacing: 20px;
+      }
+      td {
+        width: 180px;
+        padding: 20px;
+      }
+      img {
+        width: 120px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Result Analysis Dashboard</h1>
+  <table>
+    <tr>
+      <td>
+        <a href="Admin/admin_index.html">
+          <img src="Public media/Admin.jpg" alt="Admin Image" />
+          <p>Admin</p>
+        </a>
+      </td>
+      <td>
+        <a href="faculty/Faculty_index.html">
+          <img src="Public media/Faculty.jpg" alt="Faculty Image" />
+          <p>Faculty</p>
+        </a>
+      </td>
+      <td>
+        <a href="student_media/student_index.html">
+          <img src="Public media/Student.png" alt="Student Image" />
+          <p>Student</p>
+        </a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Admin - Results Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #5e3d9a;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.8em;
+    }
+    nav {
+      background-color: #4b2e83;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffd700;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: white;
+    }
+    h2 {
+      text-align: center;
+      color: #4b2e83;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+    table, th, td {
+      border: 1px solid #4b2e83;
+    }
+    th {
+      background-color: #5e3d9a;
+      color: white;
+      padding: 10px;
+    }
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    ul li a {
+      color: #5e3d9a;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    ul li a:hover {
+      color: #ffd700;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <header>Admin - Results Management</header>
+
+  <nav>
+    <a href="admin_index.html">Dashboard</a>
+    <a href="usr.mngmnt.html">User Management</a>
+    <a href="crse.mngmnt.html">Course Management</a>
+    <a href="report.html">Reports</a>
+    <a href="result.html">Results</a>
+  </nav>
+
+  <h2>Manage Results</h2>
+
+  <!-- Action List -->
+  <table>
+    <tr>
+      <td>
+        <ul>
+          <li><a href="#">Add Results</a></li>
+          <li><a href="#">Update Results</a></li>
+          <li><a href="#">Delete Results</a></li>
+          <li><a href="#">Post Notification of Results</a></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Results Table -->
+  <table>
+    <tr>
+      <th>S.No.</th>
+      <th>Reg.ID</th>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Marks</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>31132</td>
+      <td>Chiranjini</td>
+      <td>FrontEnd</td>
+      <td>43</td>
+      <td>
+        <ul>
+          <li><a href="#">Edit Results</a></li>
+          <li><a href="#">Delete Results</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>31133</td>
+      <td>Latha</td>
+      <td>FrontEnd</td>
+      <td>45</td>
+      <td>
+        <ul>
+          <li><a href="#">Edit Results</a></li>
+          <li><a href="#">Delete Results</a></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
 </body>
 </html>

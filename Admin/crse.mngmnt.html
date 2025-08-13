@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f6ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5e3d9a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #4a2e7f;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 250px;
+            padding: 20px;
+            text-decoration: none;
+            color: #4a2e7f;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #4a2e7f;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Course Management</h1>
+</header>
+
+<nav>
+    <a href="admin_index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="result.html">Results</a>
+    <a href="usr.mngmnt.html">User Management</a>
+    <a href="report.html">Reports</a>
+</nav>
+
+<main>
+    <a href="c.m.f.html" class="card">
+        <img src="admin_media/faculty.png" alt="Faculty Management">
+        <h2>Faculty Course Management</h2>
+    </a>
+
+    <a href="c.m.st.html" class="card">
+        <img src="admin_media/student.png" alt="Student Management">
+        <h2>Student Course Management</h2>
+    </a>
+</main>
+
+</body>
+</html>

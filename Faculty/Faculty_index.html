@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Faculty Dashboard</title>
+    <style>
+        body {
+            background-color: #d9f7d9; /* light green */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: maroon;
+            margin-top: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+        }
+        .card p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: maroon;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faculty Dashboard</h1>
+
+    <div class="dashboard">
+        <a href="view_stuprofile.html" class="card">
+            <img src="faculty_media/usr.mngmt.jpg" alt="Student Profile" />
+            <p>View Student Profile</p>
+        </a>
+
+        <a href="view_courses.html" class="card">
+            <img src="faculty_media/course.jpg" alt="Courses" />
+            <p>View Courses</p>
+        </a>
+
+        <a href="view_report.html" class="card">
+            <img src="faculty_media/report.jpg" alt="Reports" />
+            <p>View Reports</p>
+        </a>
+
+        <a href="post_marks.html" class="card">
+            <img src="faculty_media/results.jpg" alt="Post Marks" />
+            <p>Post Marks</p>
+        </a>
+
+        <a href="profile.html" class="card">
+            <img src="faculty_media/faculty.jpg" alt="Profile" />
+            <p>My Profile</p>
+        </a>
+
+        <a href="view_results.html" class="card">
+            <img src="faculty_media/results.jpg" alt="View Results" />
+            <p>View Results</p>
+        </a>
+    </div>
+</body>
+</html>

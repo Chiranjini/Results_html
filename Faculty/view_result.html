@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Result Dashboard</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .course-list {
+      margin-bottom: 25px;
+    }
+
+    .course-list strong {
+      color: #901E3E;
+      font-size: 18px;
+    }
+
+    .course-list ul {
+      padding-left: 20px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table th, table td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    table th {
+      background-color: #901E3E;
+      color: white;
+      font-weight: bold;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+
+    table tr:hover {
+      background-color: #f1f1f1;
+      transform: scale(1.01);
+      transition: 0.2s ease-in-out;
+    }
+
+    .status-pass {
+      color: green;
+      font-weight: bold;
+    }
+
+    .status-fail {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="Faculty-heading">Faculty Result Dashboard</h1>
+
+  <div class="container">
+    <!-- Course List -->
+    <div class="course-list">
+      <p><strong>Your Courses</strong></p>
+      <ul>
+        <li>DBMS</li>
+        <li>OOP</li>
+        <li>Front End Framework</li>
+      </ul>
+    </div>
+
+    <!-- Results Table -->
+    <h3 style="color:#901E3E; text-align:center;">Post/View Results - DBMS</h3>
+    <table border="1">
+      <tr>
+        <th>Student Name</th>
+        <th>Roll No</th>
+        <th>Marks</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Bindu</td>
+        <td>2400031133</td>
+        <td>90</td>
+        <td class="status-pass">P</td>
+      </tr>
+      <tr>
+        <td>Chiranjini</td>
+        <td>2400031132</td>
+        <td>92</td>
+        <td class="status-pass">P</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

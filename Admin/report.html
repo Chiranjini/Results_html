@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f6ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5e3d9a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #4a2e7f;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        .filter-box {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        select, input[type="date"], button {
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ffd700;
+            color: #4a2e7f;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e6c200;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        table th {
+            background-color: #4a2e7f;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f3eaff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Reports</h1>
+</header>
+
+<nav>
+    <a href="admin_index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="result.html">Results</a>
+    <a href="usr.mngmnt.html">User Management</a>
+</nav>
+
+<main>
+    <div class="filter-box">
+        <label for="report-type">Report Type:</label>
+        <select id="report-type">
+            <option>All</option>
+            <option>Faculty</option>
+            <option>Student</option>
+            <option>Course</option>
+        </select>
+
+        <label for="from-date">From:</label>
+        <input type="date" id="from-date">
+
+        <label for="to-date">To:</label>
+        <input type="date" id="to-date">
+
+        <button>Filter</button>
+    </div>
+
+    <table>
+        <tr>
+            <th>Report ID</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Date Generated</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>7890</td>
+            <td>Faculty</td>
+            <td>Dr. Sudhakar </td>
+            <td>2025-08-01</td>
+            <td>
+                <a href="#">View</a> | <a href="#">Download</a>
+            </td>
+        </tr>
+        <tr>
+            <td>31132</td>
+            <td>Student</td>
+            <td>Chiranjini</td>
+            <td>2025-08-05</td>
+            <td>
+                <a href="#">View</a> | <a href="#">Download</a>
+            </td>
+        </tr>
+    </table>
+</main>
+
+</body>
+</html>

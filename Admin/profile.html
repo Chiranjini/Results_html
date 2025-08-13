@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Profile</title>
+</head>
+<body style="
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f0ff; /* soft violet background */
+  color: #000;
+">
+
+  <div style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  ">
+
+    <h1 style="color: #5a2d82;">Admin Profile</h1>
+
+    <div style="
+      background-color: white;
+      width: 50%;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 15px rgba(90, 45, 130, 0.3);
+      border-top: 6px solid #5a2d82;
+    ">
+
+      <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <img src="admin_media/profile.jpg" alt="Admin Photo" style="
+          width: 120px;
+          height: 120px;
+          border-radius: 10px;
+          border: 2px solid #5a2d82;
+          margin-right: 20px;
+        ">
+        <p>
+          Welcome to your Admin Dashboard.<br>
+          Manage users, results, and announcements here.
+        </p>
+      </div>
+
+      <ul style="list-style-position: inside; padding-left: 0; margin-bottom: 20px;">
+        <li><a href="usr.mngmnt.html" style="color: #5a2d82; text-decoration: none; font-weight: bold;">Manage Users</a></li>
+        <li><a href="announcements.html" style="color: #5a2d82; text-decoration: none; font-weight: bold;">Post Announcement</a></li>
+        <li><a href="logs.html" style="color: #5a2d82; text-decoration: none; font-weight: bold;">View Logs</a></li>
+      </ul>
+
+      <hr style="border: 1px solid #d8c4f0;">
+
+      <div style="text-align: center; margin-top: 20px;">
+        <h3 style="color: #5a2d82;">Admin Details</h3>
+        <table border="1" cellpadding="8" cellspacing="0" style="
+          margin: auto;
+          border-collapse: collapse;
+          border-color: #5a2d82;
+        ">
+          <tr style="background-color: #e9ddf8; color: #5a2d82;">
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td><i>Chiru</i></td>
+            <td><a href="mailto:admin@univ.edu" style="color: #5a2d82;">admin@univ.edu</a></td>
+          </tr>
+          <tr>
+            <td>Role</td>
+            <td>Administrator</td>
+          </tr>
+        </table>
+      </div>
+
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="admin_index.html" style="
+          display: inline-block;
+          background-color: #5a2d82;
+          color: white;
+          padding: 8px 15px;
+          border-radius: 5px;
+          text-decoration: none;
+          font-weight: bold;
+        ">Back to Dashboard</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
